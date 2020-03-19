@@ -5,18 +5,24 @@ import DreamDisplay from './DreamDisplay';
 class AppContainer extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            dreamArray: [],
+        }
+    }
+
+    updateDreamArray = (updatedArray) => {
+        this.setState({dreamArray : updatedArray})
     }
     render() {
         return (
             <div>
 
                 <div>
-                    <DreamForm/>
+                    <DreamForm updateDreamArray = {this.updateDreamArray}/>
                 </div>
 
                 <div>
-                    <DreamDisplay/>
+                    <DreamDisplay dreamArray = {this.state.dreamArray}/>
                 </div>
 
             </div>
