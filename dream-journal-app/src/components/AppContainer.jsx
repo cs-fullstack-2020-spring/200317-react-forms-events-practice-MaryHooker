@@ -11,20 +11,18 @@ class AppContainer extends Component {
     }
 
     updateDreamArray = (updatedArray) => {
-        this.setState({dreamArray : updatedArray})
+        this.setState({ dreamArray: updatedArray })
     }
+
     render() {
         return (
-            <div>
-
-                <div>
-                    <DreamForm updateDreamArray = {this.updateDreamArray}/>
+            <div className='container' >
+                <div className='form'>
+                    <DreamForm updateDreamArray={this.updateDreamArray} />
                 </div>
-
-                <div>
-                    <DreamDisplay dreamArray = {this.state.dreamArray}/>
+                <div className='display' >
+                    <DreamDisplay dreamArray={this.state.dreamArray}/>
                 </div>
-
             </div>
         );
     }
