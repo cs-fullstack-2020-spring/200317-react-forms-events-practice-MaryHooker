@@ -124,14 +124,14 @@ class DreamForm extends Component {
                         <br />
                         
 
-                        <textarea name="dreamText" id="dreamText" cols="30" rows="8" value={this.state.dreamStory} name='dreamStory' onChange={this.changeAllInputs} className='input' ></textarea>
+                        <textarea name="dreamText" id="dreamText" cols="30" rows="6" value={this.state.dreamStory} name='dreamStory' onChange={this.changeAllInputs} className='input' ></textarea>
                     </div>
                     <br />
                     
                     <div>
                         <label htmlFor="dreamMeaning">What Do You Think It All Means?</label>
                         <br />
-                        <textarea name="dreamMeaning" id="dreamMeaning" cols="30" rows="8" value={this.state.dreamMeaning} name='dreamMeaning' onChange={this.changeAllInputs} className='input' ></textarea>
+                        <textarea name="dreamMeaning" id="dreamMeaning" cols="30" rows="6" value={this.state.dreamMeaning} name='dreamMeaning' onChange={this.changeAllInputs} className='input' ></textarea>
                     </div>
                     <br />
 
